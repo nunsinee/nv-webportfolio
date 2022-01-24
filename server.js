@@ -15,18 +15,17 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
 	console.log(req.body);
 	const transporter = nodemailer.createTransport({
-		host: "smtp.gmail.com",
-		port: 465,
-		secure: true,
+		host: "mailout.one.com",
+		port: 587,
 		auth: {
-			user: "nunsinee.v@gmail.com",
+			user: "mim@thaifolkinnorway.com",
 			pass: "Mimmim2022",
 		},
 	});
 
 	const mailOptions = {
 		from: `${req.body.name} : ${req.body.message}`,
-		to: "nunsinee.v@gmail.com",
+		to: "mim@thaifolkinnorway.com",
 		subject: `${req.body.subject} - ${req.body.message}`,
 		text: req.body.message,
 	};
