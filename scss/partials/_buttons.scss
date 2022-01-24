@@ -1,0 +1,29 @@
+@use "../partials/custom" as *;
+
+.btn {
+	&.btn-dark {
+		border-radius: $borderBtnRadius;
+	}
+	&.btn-dark:hover {
+		background-color: rgba($black, 0.7);
+		border: 1px solid $white;
+	}
+
+	&.btn-weblink {
+		background-color: $black;
+		color: $white;
+		border-radius: $borderRadius;
+		padding: 1px 2px;
+		font-size: 0.7em;
+		margin: 0.25em;
+	}
+
+	&.btn-weblink:hover {
+		color: getColour(accent);
+	}
+}
+.gettoknow {
+	@media (max-width: $desktop) {
+		margin-bottom: 1.5em;
+	}
+}

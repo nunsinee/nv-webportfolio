@@ -1,0 +1,13 @@
+@use "../partials/custom" as *;
+
+@mixin navgradient {
+	background: linear-gradient(rgba($black, 0.6), shade-color($primary, 10%));
+}
+
+@mixin gradient {
+	background: shade-color($primary, 10%);
+}
+
+@mixin gradient-white {
+	background: linear-gradient(90deg, rgba($white, 0.9), rgba($white, 0.8));
+}

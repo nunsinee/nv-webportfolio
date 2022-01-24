@@ -1,0 +1,39 @@
+@use "../partials/custom" as *;
+
+.contact-container {
+	margin: 1em 2em 2em 2em;
+
+	& div {
+		margin-bottom: 1em;
+	}
+}
+
+.contact-list {
+	display: flex;
+	margin-top: 0.25em;
+	justify-items: center;
+	align-items: center;
+}
+
+i {
+	&.fal {
+		padding-right: 0.5em;
+		font-size: 1.5rem;
+		padding-right: 0.25em;
+		margin: 0.25em;
+		color: $primary;
+		font-weight: 300;
+	}
+}
+
+.form-error {
+	display: none;
+	font-size: 0.9rem;
+	margin-bottom: 0.15em;
+	color: getColour(error);
+	box-sizing: border-box;
+}
+
+.messageAlert {
+	margin-top: 2em;
+}

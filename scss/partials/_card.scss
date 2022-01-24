@@ -1,0 +1,71 @@
+@use "../partials/custom" as *;
+
+.skills-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.card-icon {
+	background-color: transparent;
+	color: $white;
+	border-radius: $borderBtnRadius;
+	border: 1px solid $primary;
+	padding: 0.25em 0.5rem;
+	max-width: 100px;
+	text-align: center;
+	margin: 0.5em 0.1em;
+
+	&:hover {
+		color: $primary;
+	}
+}
+
+.number {
+	width: 24px;
+	height: 24px;
+	background: rgba($black, 0.7);
+	color: $white;
+	border-radius: $borderCircleRadius;
+	text-align: center;
+	font-size: 0.9rem;
+	margin-right: 0.25em;
+	padding: 2px;
+}
+
+.title-in-card {
+	display: flex;
+	margin-bottom: 1em;
+	justify-items: center;
+}
+
+.card {
+	margin-bottom: 2em;
+	background: $white;
+	line-height: 1.2em;
+	min-height: 250px;
+	filter: drop-shadow(0 0 0.2rem $copy);
+
+	&.card-body > * {
+		margin-bottom: 0.5em;
+	}
+}
+
+.weblink-container {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+
+.card-img-top {
+	width: 100%;
+	object-fit: cover;
+}
+
+.card-title {
+	height: 3vh;
+}
+
+.card-subtitle {
+	height: 3vh;
+}

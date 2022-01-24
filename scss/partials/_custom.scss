@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap");
+
+//Custom Bootstrap colours
+$primary: #033e57;
+$secondary: #a6995b;
+$copy: #333333;
+$darkbtn: #0a0909;
+$icon: #a1cbfa;
+
+//Theme
+$colours: (
+	accent: #f4e083,
+	icon: #f7df0c,
+	grey: #efefef,
+	beige: #e0cba8,
+	error: #dd0606,
+);
+
+@function getColour($colour) {
+	@return map-get($colours, $colour);
+}
+
+//WHITE & GREY colours
+
+$white: #fff;
+$black: #000;
+
+//Fonts
+$font-primary: "Poppins", sans-serif;
+
+//New Varaibles
+$borderRadius: 5px;
+$borderBtnRadius: 30px;
+$borderCircleRadius: 50%;
+
+//Webresponsive elements
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;
+$large: 1400px;
+
+//Import Bootstrap5
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
