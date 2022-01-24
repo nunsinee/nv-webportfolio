@@ -87,11 +87,7 @@
 					<!--Contact Form-->
 
 					<div class="col-lg-6 col-sm-12">
-						<form
-							class="contact-form"
-							id="contactForm"
-							medthod="POST"
-						>
+						<form class="contact-form" id="contactForm">
 							<div class="mb-3">
 								<input
 									type="text"
@@ -113,6 +109,19 @@
 								/>
 								<div class="form-error" id="emailError">
 									Please enter valid e-mail
+								</div>
+							</div>
+
+							<div class="mb-3">
+								<input
+									type="subject"
+									class="form-control email"
+									id="subject"
+									placeholder="Subject:"
+								/>
+								<div class="form-error" id="subjectError">
+									(must have a value with a minimum length of
+									10)
 								</div>
 							</div>
 
@@ -192,17 +201,6 @@
 			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 			crossorigin="anonymous"
 		></script>
-		<!--script from Emailjs-->
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-		></script>
-		<script type="text/javascript">
-			(function () {
-				emailjs.init("user_aWHytTFfrwu1LGrf2zQBz");
-			})();
-		</script>
-		<!--script from Emailjs-->
 		<script src="/js/app.js"></script>
 	</body>
 </html>
