@@ -11127,7 +11127,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background: #03384e;
+  background: #03374d;
 }
 
 body {
@@ -11137,7 +11137,7 @@ body {
 }
 
 .wrapper {
-  background: #03384e;
+  background: #03374d;
   flex: 1 0 auto;
 }
 
@@ -11287,6 +11287,11 @@ h1.display-6 {
   font-size: 2rem;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  h1.display-6 {
+    margin-bottom: 1em;
+  }
+}
 h1.display-5 {
   font-family: "Gravitas One", cursive;
   font-size: 2rem;
@@ -11353,6 +11358,12 @@ h2.display-6 {
   margin-top: 1em;
   color: #033e57;
 }
+h2.display-6.downloading {
+  color: #033e57;
+}
+h2.display-6.downloading:hover {
+  color: #023246;
+}
 
 h3,
 h5,
@@ -11410,10 +11421,6 @@ p {
 
 .menu {
   background: linear-gradient(rgba(0, 0, 0, 0.6), #03384e);
-}
-
-.navbar {
-  margin-bottom: 1em;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
@@ -11592,6 +11599,7 @@ p {
 .card-img-top {
   width: 100%;
   object-fit: cover;
+  border: 1px solid #efefef;
 }
 
 .card-title {
@@ -11635,6 +11643,12 @@ i.fal {
 
 .messageAlert {
   margin-top: 2em;
+}
+
+.alert-custom {
+  background: #f7df0c;
+  color: #033e57;
+  border: 2px solid #033e57;
 }
 
 /*# sourceMappingURL=style.css.map */

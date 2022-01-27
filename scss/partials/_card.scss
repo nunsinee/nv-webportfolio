@@ -60,6 +60,7 @@
 .card-img-top {
 	width: 100%;
 	object-fit: cover;
+	border: 1px solid getColour(grey);
 }
 
 .card-title {

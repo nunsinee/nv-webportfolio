@@ -5,7 +5,7 @@
 }
 
 @mixin gradient {
-	background: shade-color($primary, 10%);
+	background: shade-color($primary, 12%);
 }
 
 @mixin gradient-white {

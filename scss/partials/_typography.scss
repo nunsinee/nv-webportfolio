@@ -6,6 +6,10 @@ h1 {
 		color: shade-color($primary, 30%);
 		font-size: 2rem;
 		text-transform: uppercase;
+
+		@media (min-width: $tablet) {
+			margin-bottom: 1em;
+		}
 	}
 
 	&.display-5 {
@@ -87,6 +91,14 @@ h2 {
 	&.display-6 {
 		margin-top: 1em;
 		color: $primary;
+
+		&.downloading {
+			color: $primary;
+
+			&:hover {
+				color: getColour(darkPrimary);
+			}
+		}
 	}
 }
 

@@ -37,3 +37,9 @@ i {
 .messageAlert {
 	margin-top: 2em;
 }
+
+.alert-custom {
+	background: getColour(icon);
+	color: $primary;
+	border: 2px solid $primary;
+}

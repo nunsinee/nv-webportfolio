@@ -43,7 +43,6 @@ contactForm.addEventListener("submit", (e) => {
 		contactForm.reset();
 	} else {
 		messageAlert.innerHTML = "";
-		// contactForm.reset();
 	}
 });
 
@@ -75,7 +74,7 @@ function senddingMail() {
 		.send("service_6noogkt", "template_xf6zs66", formData)
 		.then(function (res) {
 			console.log("success", res.status);
-			messageAlert.innerHTML = `<div class="alert alert-success"> Your message has been sent </div>`;
+			messageAlert.innerHTML = `<div class="alert alert-custom"> Your message has been sent! </div>`;
 		})
 		.catch(function (err) {
 			console.log("not sent", err.status);
